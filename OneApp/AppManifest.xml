@@ -3,12 +3,12 @@
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="OneApp"
      ProductID="{f46bfb67-cf19-4f5c-8a63-9273a1e8a871}"
-     Version="1.0.0.0"
+     Version="1.5.3.0"
      SharePointMinVersion="16.0.0.0"
 >
   <Properties>
     <Title>OneApp</Title>
-    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <StartPage>~appWebUrl/Pages/StartPage.aspx?{StandardTokens}</StartPage>
   </Properties>
 
   <AppPrincipal>

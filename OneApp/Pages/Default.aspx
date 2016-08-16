@@ -9,7 +9,7 @@
 <%-- The markup and script in the following Content element will be placed in the <head> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
     <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
-    <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
+    <SharePoint:ScriptLink Name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
     <meta name="WebPartPageExpansion" content="full" />
 
     <!-- Add your CSS styles to the following file -->
@@ -32,6 +32,9 @@
             <!-- The following content will be replaced with the user name when you run the app - see App.js -->
             initializing...
         </p>
+
+        <object width="600" height="400" data="https://www.idg.se" type="text/html"></object>
+        
     </div>
 
 </asp:Content>

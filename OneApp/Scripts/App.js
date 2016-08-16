@@ -29,3 +29,34 @@ function initializePage()
         alert('Failed to get user name. Error:' + args.get_message());
     }
 }
+
+function alertUser() {
+    var forNamn = $("#txtForNamn").val();
+    var efterNamn = $("#txtEfterNamn").val();
+    var ePost = $("#txtEPost").val();
+    var adress = $("#txtAdress").val();
+    var postNummer = $("#txtPostNummer").val();
+    var ort = $("#txtOrt").val();
+    var telNummer = $("#txtNummer").val();
+    var datum = $("#txtDatum").val();
+
+    alert("Inskickad Data" + "\r\n" + "\r\n" + "Förnamn: " + forNamn + "\r\n" +
+          "Efternamn: " + efterNamn + "\r\n" +
+          "E-post: " + ePost + "\r\n" +
+          "Adress: " + adress + "\r\n" +
+          "Postnummer: " + postNummer + "\r\n" +
+          "Ort: " + ort + "\r\n" +
+          "Telefon: " + telNummer + "\r\n" +
+          "Datum: " + datum);
+}
+
+function clearInput() {
+    var forNamn = $("#txtForNamn").val("");
+    var efterNamn = $("#txtEfterNamn").val("");
+    var ePost = $("#txtEPost").val("");
+    var adress = $("#txtAdress").val("");
+    var postNummer = $("#txtPostNummer").val("");
+    var ort = $("#txtOrt").val("");
+    var telNummer = $("#txtNummer").val("");
+    var datum = $("#txtDatum").val("");
+}
