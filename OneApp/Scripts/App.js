@@ -40,14 +40,18 @@ function alertUser() {
     var telNummer = $("#txtNummer").val();
     var datum = $("#txtDatum").val();
 
-    alert("Inskickad Data" + "\r\n" + "\r\n" + "Förnamn: " + forNamn + "\r\n" +
-          "Efternamn: " + efterNamn + "\r\n" +
-          "E-post: " + ePost + "\r\n" +
-          "Adress: " + adress + "\r\n" +
-          "Postnummer: " + postNummer + "\r\n" +
-          "Ort: " + ort + "\r\n" +
-          "Telefon: " + telNummer + "\r\n" +
-          "Datum: " + datum);
+    if (forNamn.length < 0 || efterNamn.length < 0 || ePost.length < 0 || adress.length < 0 || postNummer.length < 0 || ort.length < 0 || telNummer.length < 0 || datum.length < 0) {
+        alert("Fyll i ett värde")} else {
+
+        alert("Inskickad data: " + "\r\n" + "\r\n" + "Förnamn:\t" + forNamn + "\r\n" +
+            "Efternamn:\t" + efterNamn + "\r\n" +
+            "E-post:\t\t" + ePost + "\r\n" +
+            "Adress:\t\t" + adress + "\r\n" +
+            "Postnr:\t\t" + postNummer + "\r\n" +
+            "Ort:\t\t\t" + ort + "\r\n" +
+            "Telefon:\t\t" + telNummer + "\r\n" +
+            "Datum:\t\t" + datum);
+    }
 }
 
 function clearInput() {

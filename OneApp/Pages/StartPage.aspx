@@ -35,7 +35,7 @@
         input[type=email],
         input[type=date] {
             color: #222222;
-            padding: 5px 5px 5px 10px;
+            padding: 5px 5px 5px 8px;
             height: 30px;
             width: 300px;
         }
